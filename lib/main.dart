@@ -34,17 +34,18 @@ class _MyHomeState extends State<MyHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Ini title"),
-        backgroundColor: const Color.fromARGB(255, 136, 32, 255),
+        title: const Text("Julian Arwansah"),
+        backgroundColor: const Color.fromARGB(255, 255, 18, 196),
         actions: [
           Icon(Icons.person, color: Colors.white),
           SizedBox(width: 10),
           Icon(Icons.settings, color: Colors.white),
+          Icon(Icons.view_sidebar, color: Colors.white),
         ],
       ),
       body: const Center(
         child: Text(
-          "Halo Flutter!",
+          "Hallo World, ini aplikasi pertama saya menggunakan flutter",
           style: TextStyle(fontSize: 20),
         ),
       ),
