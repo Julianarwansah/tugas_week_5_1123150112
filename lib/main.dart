@@ -38,6 +38,8 @@ class _MyHomeState extends State<MyHome> {
         backgroundColor: const Color.fromARGB(255, 136, 32, 255),
         actions: [
           Icon(Icons.person, color: Colors.white),
+          SizedBox(width: 10),
+          Icon(Icons.settings, color: Colors.white),
         ],
       ),
       body: const Center(
