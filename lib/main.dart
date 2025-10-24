@@ -34,12 +34,47 @@ class MyHome extends StatelessWidget {
         ],
       ),
       body: Container(
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 255, 187, 238),
-          borderRadius: BorderRadius.circular(20),
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start, 
+          children: [
+            Container(
+              width: 200,
+              height: 100,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Color.fromARGB(255, 255, 74, 225) ,Color.fromARGB(255, 195, 0, 255)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+              child: const Center(
+                child: Text(
+                  "Container Atas",
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Container(
+              width: 200,
+              height: 100,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Color.fromARGB(255, 195, 0, 255), Color.fromARGB(255, 255, 74, 225)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+              child: const Center(
+                child: Text(
+                  "Container Bawah",
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ],
         ),
-        child: Text("Teks Dalam Container"),
       ),
     );
   }
