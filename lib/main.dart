@@ -25,7 +25,7 @@ class MyHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Julian Arwansah"),
-        backgroundColor: const Color.fromARGB(255, 255, 18, 196),
+        backgroundColor: const Color.fromARGB(255, 255, 44, 202),
         actions: const [
           Icon(Icons.person, color: Colors.white),
           SizedBox(width: 10),
@@ -33,12 +33,13 @@ class MyHome extends StatelessWidget {
           Icon(Icons.view_sidebar, color: Colors.white),
         ],
       ),
-      body: const Center(
-        child: Text(
-          "Hallo World, ini aplikasi pertama saya menggunakan Flutter",
-          style: TextStyle(fontSize: 20),
-          textAlign: TextAlign.center,
+      body: Container(
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 255, 187, 238),
+          borderRadius: BorderRadius.circular(20),
         ),
+        child: Text("Teks Dalam Container"),
       ),
     );
   }
