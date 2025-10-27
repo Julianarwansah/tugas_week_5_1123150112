@@ -56,20 +56,55 @@ class MyHome extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            Container(
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Color.fromARGB(255, 195, 0, 255), Color.fromARGB(255, 255, 74, 225)],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
+            Transform(
+              alignment: Alignment.center,
+              transform: Matrix4.rotationZ(23
+              ),
+              child: Container(
+                width: 200,
+                height: 100,
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Color.fromARGB(255, 195, 0, 255),
+                      Color.fromARGB(255, 255, 74, 225),
+                      Color.fromARGB(255, 195, 0, 255)
+                    ],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+                child: const Center(
+                  child: Text(
+                    "Container Bawah",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
                 ),
               ),
-              child: const Center(
-                child: Text(
-                  "Container Bawah",
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+            ),
+            const SizedBox(height: 20),
+            Transform(
+              alignment: Alignment.center,
+              transform: Matrix4.rotationZ(-0.26),
+              child: Container(
+                width: 200,
+                height: 100,
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Color.fromARGB(255, 195, 0, 255),
+                      Color.fromARGB(255, 255, 74, 225),
+                      Color.fromARGB(255, 195, 0, 255)
+                    ],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+                child: const Center(
+                  child: Text(
+                    "Container Bawah",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
                 ),
               ),
             ),
@@ -82,6 +117,10 @@ class MyHome extends StatelessWidget {
                   colors: [Color.fromARGB(255, 195, 0, 255), Color.fromARGB(255, 255, 74, 225), Color.fromARGB (255, 195, 0, 255)],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
+                ),
+                image: DecorationImage(
+                  image: AssetImage('assets/images/test.png'),
+                  fit: BoxFit.cover,
                 ),
               ),
               child: const Center(
